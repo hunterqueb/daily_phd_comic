@@ -1,0 +1,18 @@
+services:
+  phd-daily:
+    build: .
+    container_name: phd-daily
+    restart: unless-stopped
+    environment:
+      # Set your time zone. The comic changes at midnight in this zone.
+      TZ: Etc/UTC
+      # Change this text to get a different comic sequence.
+      PHD_SALT: phd
+    ports:
+      # The browser must reach this port. Homarr does not relay it.
+      - "8085:8080"
+    read_only: true
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
