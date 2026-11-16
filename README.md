@@ -14,6 +14,10 @@ Deeper" by Jorge Cham) each day. Use it in a Homarr **iFrame** widget.
 
 The service uses only the Python standard library.
 
+# Example
+
+![homarr example](media/example.png)
+
 ## Install
 
 1. Put `phd_daily.py`, `Dockerfile` and `compose.yaml` in one folder.
