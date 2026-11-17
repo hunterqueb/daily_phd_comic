@@ -1,6 +1,6 @@
 services:
   phd-daily:
-    image: ghcr.io/hunterqueb/daily_phd_comic:latest
+    image: ghcr.io/hunterqueb/daily_phd_comic:main
     container_name: phd-daily
     restart: unless-stopped
     environment:
